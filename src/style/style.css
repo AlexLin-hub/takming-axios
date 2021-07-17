@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;500;700&display=swap');
+#app {
+    font-family: "Lato", "Noto Sans TC", sans-serif;
+    background-color: #F5F5F5;
+    color: #3a3a3a;
+    min-height: 100vh;
+}
+
+#main {
+    height: 100%;
+}
+
+input {
+    text-align: center;
+    font-size: 1.5rem !important;
+    font-weight: 300 !important;
+}
+
+.v-input.search input {
+    text-align: start !important;
+    font-size: 1rem !important;
+    font-weight: 300 !important;
+}
+
+h1 {
+    font-size: 3rem !important;
+    font-weight: 400 !important;
+}
+
+h2 {
+    font-size: 2.5rem !important;
+    font-weight: 400 !important;
+}
+
+h3 {
+    font-size: 2rem !important;
+    font-weight: 400 !important;
+}
+
+h4 {
+    font-size: 1.75rem !important;
+    font-weight: 400 !important;
+}
+
+h5 {
+    font-size: 1.5rem !important;
+    font-weight: 400 !important;
+}
+
+small {
+    font-size: .9rem !important;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to
+/* .fade-leave-active below version 2.1.8 */
+
+    {
+    opacity: 0;
+}
+
+#home {
+    height: 100vh;
+    overflow: auto;
+}
+
+.v-data-table table>tbody>tr>td.data_expand {
+    background: transparent !important;
+}
+
+.v-data-table__expanded.v-data-table__expanded__content {
+    box-shadow: none !important;
+    background: rgba(132, 117, 77, 0.03) !important;
+    color: #84754d !important;
+}
