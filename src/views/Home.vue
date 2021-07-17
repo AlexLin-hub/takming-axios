@@ -248,8 +248,8 @@ export default {
       // 以下為程式回應判斷，無需修改。
       if (res.status === 200) {
         const { data, returnCode, returnMessage } = res["data"] || {};
+        this.getReq = { returnCode, returnMessage, data };
         if (data["method"].toUpperCase() === "GET") {
-          this.getReq = { returnCode, returnMessage, data };
           if (returnCode === "0000") {
             this.getSuccess = true;
             return;
@@ -272,8 +272,8 @@ export default {
       // 以下為程式回應判斷，無需修改。
       if (res.status === 200) {
         const { data, returnCode, returnMessage } = res["data"] || {};
+        this.postReq = { returnCode, returnMessage, data };
         if (data["method"].toUpperCase() === "POST") {
-          this.postReq = { returnCode, returnMessage, data };
           if (returnCode === "0000") {
             this.postSuccess = true;
             return;
@@ -296,8 +296,8 @@ export default {
       // 以下為程式回應判斷，無需修改。
       if (res.status === 200) {
         const { data, returnCode, returnMessage } = res["data"] || {};
+        this.putReq = { returnCode, returnMessage, data };
         if (data["method"].toUpperCase() === "PUT") {
-          this.putReq = { returnCode, returnMessage, data };
           if (returnCode === "0000") {
             this.putSuccess = true;
             return;
@@ -320,8 +320,8 @@ export default {
       // 以下為程式回應判斷，無需修改。
       if (res.status === 200) {
         const { data, returnCode, returnMessage } = res["data"] || {};
+        this.deleteReq = { returnCode, returnMessage, data };
         if (data["method"].toUpperCase() === "DELETE") {
-          this.deleteReq = { returnCode, returnMessage, data };
           if (returnCode === "0000") {
             this.deleteSuccess = true;
             return;
